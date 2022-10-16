@@ -45,7 +45,7 @@ html {
 
 .title-section h2 {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: --fontcolor: #808080;
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 1rem;

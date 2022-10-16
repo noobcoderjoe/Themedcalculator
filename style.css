@@ -20,7 +20,7 @@
     /* --secondary-color: #151515; */
     --shadow-color-light: rgba(171, 173, 173, 0.1);
     --shadow-color-dark: rgba(41, 41, 41, 0.4);
-    --fontcolor: #808080;
+    --fontcolor: #ddd;
 }
 
 html {

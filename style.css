@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    background-color: var(--primary-color);
+}
+
+:root {
+    --primary-color: #ecf0f3;
+    --secondary-color: rgb(202, 89, 89);
+    --shadow-color-light: #fff;
+    --shadow-color-dark: rgba(0, 0, 0, 0.16);
+}
+
+.dark-theme {
+    --primary-color: #121212;
+    --secondary-color: #4d7788;
+    /* --secondary-color: #151515; */
+    --shadow-color-light: rgba(171, 173, 173, 0.1);
+    --shadow-color-dark: rgba(41, 41, 41, 0.4);
+    --fontcolor: #808080;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+.hidden1 {
+    display: none;
+}
+
+.title-section {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: var(--secondary-color);
+    /* border-bottom: .2rem solid rgb(236, 236, 236); */
+}
+
+.title-section h2 {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .4rem;
+}
+
+.icon {
+    color: rgb(238, 225, 225);
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+.cont {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.des h1 {
+    font-size: 4rem;
+    color: var(--fontcolor);
+}
+
+.des .p {
+    font-size: 1.4rem;
+    color: var(--fontcolor);
+}
+
+span {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.titlespan {
+    color: var(--secondary-color);
+    font-size: 4rem;
+}
+
+.mini {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.calculator {
+    padding: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    border-radius: 3rem;
+    box-shadow: inset 5px 5px 12px var(--shadow-color-light),
+        5px 5px 12px var(--shadow-color-dark)
+}
+
+input {
+    grid-column: span 4;
+    width: 95%;
+    height: 6rem;
+    margin: auto;
+    border-radius: 2.4rem;
+    text-align: end;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.6rem;
+    border: none;
+    color: var(--secondary-color);
+    box-shadow: 5px 5px 12px var(--shadow-color-light),
+        inset 5px 5px 12px var(--shadow-color-dark);
+}
+
+button {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    color: #707070;
+    margin: 1rem;
+    box-shadow: inset 5px 5px 12px var(--shadow-color-light),
+        5px 5px 12px var(--shadow-color-dark);
+}
+
+.clear-btn {
+    color: var(--secondary-color);
+}
+
+.equal {
+    width: 10rem;
+}
+
+.accent {
+    color: var(--secondary-color);
+}
+
+
+
+
+
+@media (max-width:500px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        width: 100vw;
+    }
+
+    .title-section {
+        padding: 0 1rem;
+        height: 6vh;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .title-section h2 {
+        font-size: .6rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+
+    .cont {
+        width: 100%;
+        display: flex;
+        margin-top: 1vh;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: .2rem;
+    }
+
+    .cont .des {
+        display: none;
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .cont p {
+        font-size: .8rem;
+    }
+
+    .cont h1,
+    .titlespan {
+        font-size: 1rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    span {
+        display: none;
+        font-size: .8rem;
+    }
+
+    .calculator {
+        font-size: 1rem;
+        grid-template-columns: repeat(4, 5rem);
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 4rem;
+        height: 4rem;
+        margin: .6rem;
+    }
+
+    .equal {
+        width: 9rem;
+    }
+
+    .hidden1,
+    span,
+    .hidden {
+        display: inline;
+    }
+
+    .hidden1 h1,
+    .hidden {
+        color: var(--fontcolor);
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -4.4rem;
+        height: 5vh;
+        padding-left: 2rem;
+    }
+
+    .mini,
+    p {
+        font-size: .8rem;
+    }
+
+    .bottom h1,
+    .titlespan {
+        font-size: 1.6rem;
+    }
+
+
+
+
+
+}
